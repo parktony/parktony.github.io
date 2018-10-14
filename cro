@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CRO toolsk</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Test page</h1>
+        <p></p>
+      </header>
+      <section>
+        <h3>
+<a id="intro" class="anchor" href="#intro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CRO Ticket Namer</h3>
+
+<p>Drag this bookmarklet to your bookmark toolbar <a href="javascript:void function(){function i(){var i=document.getElementById("prefix");i.select(),document.execCommand("copy")}function e(){var i=jQuery("#campaignType").children(".switch.active").attr("value"),e=jQuery("#brand").children(".switch.active").attr("value"),a=jQuery("#division").children(".switch.active").attr("value"),t=jQuery("#portfolio").children(".switch.active").attr("value"),o=jQuery("#campaignName").val(),d="";"B"==a&&(d="CRO-");var l=d+i+"-"+e+"-"+a+"-"+t+" "+o;jQuery("#prefix").val(l)}var a=document.location.href;a.indexOf("digital.westpacgroup.com.au")>-1||a.indexOf("jira.srv.westpac.com.au")>-1?jQuery("#jiraHelper").length>0?jQuery("#jiraHelper").css("display","block"):(jQuery("body").prepend('<div id="jiraHelper" class="modal"> <div class="modal-content"> <span class="close">&times;</span> <h2>CRO Ticket Namer</h2> <div> <h3>Campaign type</h3> <div id="campaignType" class="switch-group"> <div class="switch active" value="TS">A/B Test</div><div class="switch" value="TG">Targeting</div></div></div><div> <h3>Brand</h3> <div id="brand" class="switch-group"> <div class="switch active" value="WBC"">Westpac</div><div class="switch" value="STG">St George</div><div class="switch" value="BOM">BOM</div><div class="switch" value="BSA">BSA</div></div></div><div> <h3>Division</h3> <div id="division" class="switch-group"> <div class="switch active" value="C">Consumer</div><div class="switch" value="B">Business</div></div></div><div> <h3>Portfolio</h3> <div id="portfolio" class="switch-group"> <div class="switch active" value="BA">Bank accounts</div><div class="switch" value="CC">Credit cards</div><div class="switch" value="L">Business loans</div><div class="switch" value="PL">Personal loans</div><div class="switch" value="TD">Term deposits</div><div class="switch" value="FCA">FCA</div><div class="switch" value="FX">Foreign exchange</div><div class="switch" value="GCC">GCC</div><div class="switch" value="MR">Merchants</div><div class="switch" value="HL">Home loans</div><div class="switch" value="IN">Insurance</div><div class="switch" value="WL">Wealth</div><div class="switch" value="SU">Super</div><div class="switch" value="SR">Service</div><div class="switch" value="None">Generic</div></div></div><div> <h3>Campaign name</h3> <div class="output"> <input id="campaignName"> </div></div><div> <h3>Ticket name</h3> <div class="output"> <input id="prefix"> <div id="copyClipboard">Copy to clipboard</div></div></div><div id="footer-section"><small>Courtesy of Tony Park &#9786;</small></div></div></div><style>/* The Modal (background) */.modal{display: block; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 5000; /* Sit on top */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: rgb(0,0,0); /* Fallback color */ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */}/* Modal Content/Box */#jiraHelper .modal-content{background-color: #fefefe; padding-left: 40px; padding-right: 25px; padding-top: 15px; padding-bottom: 40px; border: 1px solid #888; width: 50%; margin-top: 50px; margin-left: auto; margin-right: auto;}/* The Close Button */#jiraHelper .close{color: #aaa; float: right; font-size: 28px; font-weight: bold;}#jiraHelper .close:hover,#jiraHelper .close:focus{color: black; text-decoration: none; cursor: pointer;}#jiraHelper h2{margin-bottom: 20px;}#jiraHelper .switch-group{padding-top: 10px;padding-bottom: 10px; float: left;}#jiraHelper .switch{color: #848484; font-size: 12px; padding: 10px 15px 10px 15px; text-decoration: none; width: 100px; text-align: center; cursor: pointer; background: #efefef; float: left; border: 1px solid #d4d4d4;}#jiraHelper .switch:first-child{border-top-left-radius: 2px;border-bottom-left-radius: 2px;}#jiraHelper .switch:last-child{border-top-right-radius: 2px;border-bottom-right-radius: 2px;}#jiraHelper .switch.active{background: #621a4b; color: #ffffff; border: 1px solid #621a4b;}#jiraHelper h3{padding-top: 15px;clear: both; float: left; width: 150px;}#jiraHelper #portfolio.switch-group{margin-top: -40px; margin-left: 150px;}#jiraHelper input{font-size: 14px; padding: 10px 15px 10px 15px; width: 364px; float: left; border: 1px solid #d4d4d4; margin-top: 10px; margin-bottom: 10px;}#jiraHelper .output{margin-top: 10px; margin-bottom: 40px;}#jiraHelper #copyClipboard{color: #848484; font-size: 12px; padding: 10px 15px 10px 15px; text-decoration: none; width: 100px; text-align: center; cursor: pointer; background: #efefef; float: left; border: 1px solid #d4d4d4; margin-top: 10px;}#jiraHelper #footer-section{clear: both; float: none; padding-top: 15px;}</style>'),jQuery(".switch").click(function(){jQuery(this).siblings().removeClass("active"),jQuery(this).addClass("active"),e()}),jQuery("#campaignName").keyup(function(){e()}),jQuery("#copyClipboard").click(function(){i()}),jQuery(".close").click(function(){jQuery(".modal").css("display","none")}),e()):alert("Oops! You can only use this tool while in JIRA.")}();">CRO Ticket Namer</a></p>
+
+<h3>
+<a id="cro" class="anchor" href="#cro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CRO bookmarklets</h3>
+
+<p>Here is a collection of bookmarklets created to assist in CRO builds</p>
+
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
