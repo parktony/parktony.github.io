@@ -60,7 +60,7 @@ if (URL.indexOf('digital.westpacgroup.com.au') > -1 || URL.indexOf('jira.srv.wes
 			document.execCommand("copy");
 		});
 
-		$('.close').click(function(){$('.modal').css('display','none');});
+		$('.close').click(function(){$('#jiraHelper').css('display','none');});
 
 		updatePrefix();
 
