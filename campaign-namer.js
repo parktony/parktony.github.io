@@ -24,7 +24,7 @@ function toggleTargeting() {
 
 function getTargetName() {
 	if (URL.indexOf('/browse/BUSDIGRUN') > -1 || URL.indexOf('/browse/DCV') > -1){
-		var jiraKey = $('.issue-link:eq(0)').text().replace('-','_');
+		var jiraKey = $('.aui-nav-breadcrumbs li:last').text().replace('-','_');
 		var summaryText = $('#summary-val').text();
 		if (jiraKey.length > 0 && summaryText.length > 0) {
 			$('#targetName').val(jiraKey+'-'+summaryText);
