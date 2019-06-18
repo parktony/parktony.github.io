@@ -51,12 +51,6 @@ function togglePlacement() {
 	}
 }
 
-function secureProductPageName() {
-	if ($(".placement-secure.active").attr('value') == "P") {
-		$(this).attr('value', 'P'+$('#portfolio .active').attr('value'));
-	}
-}
-
 function getTargetName() {
 	if (URL.indexOf('/browse/BUSDIGRUN') > -1 || URL.indexOf('/browse/DCV') > -1){
 		var jiraKey = $('.aui-nav-breadcrumbs li:last').text().replace('-','_');
@@ -97,7 +91,6 @@ if (URL.indexOf('digital.westpacgroup.com.au') > -1 || URL.indexOf('jira.srv.wes
 			}
 		    toggleTargeting();
 		    togglePlacement();
-		    //secureProductPageName();
 		    updatePrefix();
 		});
 
